@@ -1,6 +1,6 @@
 package Models;
 
-enum CellState {
+public enum CellState {
     EMPTY,
     FILLED,
     BLOCKED
