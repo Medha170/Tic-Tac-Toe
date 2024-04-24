@@ -1,5 +1,6 @@
 package Controller;
 
+import Exceptions.InvalidMoveException;
 import Exceptions.TwoSymbolSameException;
 import Models.Game;
 import Models.GameState;
@@ -22,8 +23,8 @@ public class GameController {
         return new Game(dimension,players);
     }
 
-    public void makeMove(Game game){
-        return;
+    public void makeMove(Game game) throws InvalidMoveException {
+        game.makeMove();
     }
 
     public GameState checkState(Game game){

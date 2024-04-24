@@ -1,17 +1,17 @@
 package Models;
 
 public class Symbol {
-    private char symbol;
+    private char aChar;
 
-    public Symbol(char symbol) {
-        this.symbol = symbol;
+    public Symbol(char aChar) {
+        this.aChar = aChar;
     }
 
-    public char getSymbol() {
-        return symbol;
+    public char getChar() {
+        return aChar;
     }
 
-    public void setSymbol(char symbol) {
-        this.symbol = symbol;
+    public void setChar(char aChar) {
+        this.aChar = aChar;
     }
 }

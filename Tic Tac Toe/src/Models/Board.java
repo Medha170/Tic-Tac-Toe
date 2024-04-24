@@ -35,6 +35,16 @@ public class Board {
     }
 
     public void printBoard() {
-
+        for (List<Cell> row : board){
+            for (Cell cell : row){
+                if (cell.getCellState().equals(CellState.EMPTY)){
+                    System.out.print("| -- |");
+                }
+                else{
+                    System.out.print("| " + cell.getPlayer().getSymbol().getChar() + " |");
+                }
+            }
+            System.out.println();
+        }
     }
 }
